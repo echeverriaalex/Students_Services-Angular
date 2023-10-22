@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Student } from 'src/app/Models/student';
+import { StudentAsyncService } from 'src/app/Services/student-async.service';
 import { StudentService } from 'src/app/Services/student-service.service';
 
 @Component({
@@ -9,12 +9,25 @@ import { StudentService } from 'src/app/Services/student-service.service';
   styleUrls: ['./student-list.component.css']
 })
 export class StudentListComponent implements OnInit{
-  private student: Student  = new Student();
+  studentList = Array<Student>();
 
-  constructor(private studentService: StudentService, private route: ActivatedRoute){}
+  constructor(private studentService: StudentService, 
+              private studentAsyncService: StudentAsyncService    
+  ){}
 
-  ngOnInit(): void {
-    let studentId = Number(this.route.snapshot.paramMap.get('id'))
-    this.student = this.studentService.getById(studentId)
+  ngOnInit(): void {    
+    // Forma sincronica todo local
+     //this.studentList = this.studentService.getAll();
+
+    // Forma async con APi
+    
+    this.studentAsyncService.getAll()
+      .then(response => {
+        this.studentList = response;
+      })
+      .catch(error =>{
+        console.log(error);        
+      })
+    
   }
 }

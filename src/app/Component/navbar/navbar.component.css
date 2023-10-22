@@ -1,0 +1,32 @@
+nav{
+    background: yellowgreen;
+}
+
+ul{
+    display: block;
+    width: 80%;
+    background: red;
+    height: 100px;
+    margin: auto;
+}
+
+li{
+    background: blue;
+    text-decoration:  overline;
+    display: inline-block;
+    
+    margin: auto;
+}
+
+a{
+    color: white;
+    background: black;
+    padding: 10px 10px;
+    font-size: 25px;
+    margin: 20px auto;
+}
+
+li:hover{
+    transition: all 1s;
+    scale: 1.4;
+}

@@ -6,22 +6,22 @@ import { Student } from '../Models/student';
 })
 export class StudentService {
   private studentList = new Array<Student>();
-  private idStudent = 0;
+  private studentId = 0;
 
   constructor() { }
 
   add(student: Student){
-    this.idStudent ++;
-    student.studentId = this.idStudent;
+    this.studentId ++;
+    student.studentId = this.studentId;
     this.studentList.push(student);
   }
 
   getAll(){return this.studentList;}
 
   getById(studentId: Number){
-    let student = this.studentList.filter(student => {
+    let students = this.studentList.filter(student => {
       return student.studentId == studentId;
     })
-    return (student.length > 0) ? student[0] : new Student
+    return (students.length > 0) ? students[0] : null;
   }
 }

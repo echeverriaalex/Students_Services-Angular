@@ -1,0 +1,38 @@
+h2{
+    text-align: center;
+}
+
+table{
+    width: 80%px;
+    border: 2px solid black;
+    margin: auto;
+    border-collapse: collapse;
+    
+}
+
+tbody{
+}
+
+tr{
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px 10px;
+    
+}
+
+th{
+    border: 2px solid black;
+    padding: 0px 20px;
+    font-size: 20px;
+    justify-content: center;
+    width: auto;
+    background: black;
+    color: white;
+}
+
+td{
+    background: rgb(219, 213, 213);
+    padding: 5px 20px;
+    font-size: 20px;
+    width: auto;
+}

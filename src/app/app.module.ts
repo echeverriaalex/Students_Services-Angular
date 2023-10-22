@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { StudentListComponent } from './Component/student-list/student-list.component';
 import { StudentAddComponent } from './Component/student-add/student-add.component';
 import { FormsModule } from '@angular/forms';
+import { StudentViewComponent } from './Component/student-view/student-view.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './Component/navbar/navbar.component';
+import { HomePageComponent } from './Component/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentListComponent,
-    StudentAddComponent
+    StudentAddComponent,
+    StudentViewComponent,
+    NavbarComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -24,4 +32,3 @@ import { FormsModule } from '@angular/forms';
 export class AppModule { }
 
 
-// https://utn-lubnan-api-1.herokuapp.com/api/Student
