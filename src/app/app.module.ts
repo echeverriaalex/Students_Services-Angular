@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './Component/navbar/navbar.component';
 import { HomePageComponent } from './Component/home-page/home-page.component';
 import { LandingPageComponent } from './Component/landing-page/landing-page.component';
+import { NotFoundPageComponent } from './Component/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LandingPageComponent } from './Component/landing-page/landing-page.comp
     StudentViewComponent,
     NavbarComponent,
     HomePageComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,

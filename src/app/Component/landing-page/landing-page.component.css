@@ -1,0 +1,12 @@
+div{
+    width: 70%;
+    display: block;
+}
+
+form{
+    width: 30%;
+}
+
+.container{
+    display: inline-block;
+}
