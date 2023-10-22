@@ -10,6 +10,7 @@ import { StudentViewComponent } from './Component/student-view/student-view.comp
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './Component/navbar/navbar.component';
 import { HomePageComponent } from './Component/home-page/home-page.component';
+import { LandingPageComponent } from './Component/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomePageComponent } from './Component/home-page/home-page.component';
     StudentAddComponent,
     StudentViewComponent,
     NavbarComponent,
-    HomePageComponent
+    HomePageComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

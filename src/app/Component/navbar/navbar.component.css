@@ -1,32 +1,25 @@
 nav{
-    background: yellowgreen;
+    background: black;
+    justify-content: center;
 }
 
 ul{
-    display: block;
-    width: 80%;
-    background: red;
-    height: 100px;
-    margin: auto;
+    margin: 0 60px;
 }
 
 li{
-    background: blue;
-    text-decoration:  overline;
-    display: inline-block;
-    
-    margin: auto;
+    padding: 10px;
+    margin: 0px 100px;
 }
 
 a{
     color: white;
-    background: black;
-    padding: 10px 10px;
-    font-size: 25px;
-    margin: 20px auto;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 li:hover{
     transition: all 1s;
-    scale: 1.4;
+    scale: 1.2;
+    /* float: right; */
 }
