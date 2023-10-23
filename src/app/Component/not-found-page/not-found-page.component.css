@@ -1,0 +1,28 @@
+.container-lost{
+    background-image: url("https://webhostingmedia.net/wp-content/uploads/2018/01/http-error-404-not-found.png");
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.message-lost{
+    background: rgb(161, 105, 214);
+    text-align: center;
+}
+
+h2{
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.img-lost{
+    background: red;
+}
+
+img{
+    background: green;
+    display: block;
+    margin: auto;
+    
+}

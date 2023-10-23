@@ -20,6 +20,7 @@ a{
 
 li:hover{
     transition: all 1s;
+    overflow-x: visible;
     scale: 1.2;
     /* float: right; */
 }

@@ -1,0 +1,42 @@
+[
+    {
+        "studentId": 1,
+        "qualification": 9
+    },
+    {
+        "studentId": 2,
+        "qualification": 4
+    },
+    {
+        "studentId": 3,
+        "qualification": 7
+    },
+    {
+        "studentId": 4,
+        "qualification": 4
+    },
+    {
+        "studentId": 5,
+        "qualification": 10
+    },
+    {
+        "studentId": 6,
+        "qualification": 9
+    },
+    {
+        "studentId": 7,
+        "qualification": 5
+    },
+    {
+        "studentId": 8,
+        "qualification": 10
+    },
+    {
+        "studentId": 9,
+        "qualification": 4
+    },
+    {
+        "studentId": 10,
+        "qualification": 2
+    }
+]
